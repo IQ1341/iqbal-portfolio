@@ -7,6 +7,7 @@
     <title>Portofolio | Muhammad Iqbal</title>
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
@@ -51,7 +52,7 @@
                                 <a href="#sertifikasi" class="text-base text-dark py-2 mx-8 flex group-hover:text-primary dark:text-white">Certificate</a>
                             </li>
                             <li class="group">
-                                <a href="#contact" class="text-base text-dark py-2  mx-8 flex group-hover:text-primary dark:text-white">Contact</a>
+                                <a href="#contact" class="text-base text-dark py-2  mx-8 flex group-hover:text-primary dark:text-white">Message</a>
                             </li>
                             <li class=" mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
@@ -96,7 +97,7 @@
                     Seorang full-stack developer yang antusias membangun solusi digital yang berdampak.
                     <span class="text-dark font-bold dark:text-white">Sedang terus belajar & berkembang!</span>
                 </p>
-                <a href="./assets/Muhammad_Iqbal.pdf" 
+                <a href="./dist/assets/Muhammad_Iqbal.pdf" 
          download 
          class="inline-flex items-center px-6 py-3 rounded-lg text-white bg-primary hover:bg-primary/90 transition duration-300 shadow-lg">
         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" 
@@ -761,7 +762,7 @@
         Unduh CV saya untuk mengetahui lebih lanjut tentang latar belakang, keahlian, dan pengalaman saya.
       </p>
 
-      <a href="assets/CV-MuhammadIqbal.pdf" 
+      <a href="./dist/assets/Muhammad_Iqbal.pdf" 
          download 
          class="inline-flex items-center px-6 py-3 rounded-lg text-white bg-primary hover:bg-primary/90 transition duration-300 shadow-lg">
         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" 
@@ -784,39 +785,66 @@
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2 ">Contact</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Kirim Pesan di sini</h2>
-                    <p class="font-medium text-md text-secondary md:text-lg">Bagian ini merupakan bagian contact dimana user yang mengunjungi website portfolio ini dapat mengirimkan pesan kepada pemilik web ini.  Apa ajalah bang....! </p>
+                    <h4 class="font-semibold text-lg text-primary mb-2 ">Message</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Ada pesan buatku?</h2>
+                    <p class="font-medium text-md text-secondary md:text-lg">Yuk, tinggalin pesan, rating, atau sekadar sapa-sapa. Nggak perlu formal-formal banget kok 😎</p>
                 </div>
             </div>
-            <form id="contact-form" action="https://formspree.io/f/mqkvzgln" method="post">
-                <div class="w-full lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-8">
-                        <label for="name" class="text-base font-bold text-primary">Nama</label>
-                        <input name="name" type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary " required>
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="email" class="text-base font-bold text-primary">Email</label>
-                        <input name="email" type="email" id="email" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required>
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="massage" class="text-base font-bold text-primary">Pesan</label>
-                        <textarea name="massage" type="text" id="massage" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
-                    </div>
-                    <div class="w-full px-4 mt-4 flex justify-center">
-                    <button disabled type="button" id="loader" class=" py-2.5 px-5 mr-2 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 inline-flex items-center">
-                        <svg aria-hidden="true" role="status" class="inline w-4 h-4 mr-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
-                        <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="#1C64F2"/>
-                        </svg>
-                        Loading...
-                    </button>
-                    </div>
-                </div>
-            </form>
+            <form id="anonymous-form" action="https://formspree.io/f/mpwrbapw" method="post" class="w-full lg:w-2/3 lg:mx-auto">
+
+  <!-- Nama / Pseudonim -->
+  <div class="w-full px-4 mb-8">
+    <label for="name" class="text-base font-bold text-primary">Nama</label>
+    <input name="name" type="text" id="name" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary">
+  </div>
+
+  <!-- Pesan -->
+  <div class="w-full px-4 mb-8">
+    <label for="message" class="text-base font-bold text-primary">Pesan</label>
+    <textarea name="message" id="message" class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" required></textarea>
+  </div>
+
+  <!-- Rating Bintang -->
+  <div class="w-full px-4 mb-8">
+    <label class="text-base font-bold text-primary">Rating Bintang</label>
+    <div class="flex items-center mt-2 space-x-2" id="star-rating">
+      <button type="button" class="star text-3xl text-gray-400 hover:text-yellow-400 focus:outline-none" data-value="1">★</button>
+      <button type="button" class="star text-3xl text-gray-400 hover:text-yellow-400 focus:outline-none" data-value="2">★</button>
+      <button type="button" class="star text-3xl text-gray-400 hover:text-yellow-400 focus:outline-none" data-value="3">★</button>
+      <button type="button" class="star text-3xl text-gray-400 hover:text-yellow-400 focus:outline-none" data-value="4">★</button>
+      <button type="button" class="star text-3xl text-gray-400 hover:text-yellow-400 focus:outline-none" data-value="5">★</button>
+    </div>
+    <input type="hidden" name="rating" id="rating" required>
+  </div>
+
+  <!-- Rating Emoji Ekspresif -->
+<div class="w-full px-4 mb-8">
+  <label class="text-base font-bold text-primary">Bagaimana pengalamanmu?</label>
+  <div class="flex items-center justify-between mt-4 space-x-2 md:space-x-4" id="emoji-rating">
+    <button type="button" class="emoji flex flex-col items-center text-4xl rounded-full transition transform hover:scale-110 focus:outline-none" data-value="sangat_puas">
+      😍
+    </button>
+    <button type="button" class="emoji flex flex-col items-center text-4xl rounded-full transition transform hover:scale-110 focus:outline-none" data-value="puas">
+      😊
+    </button>
+    <button type="button" class="emoji flex flex-col items-center text-4xl rounded-full transition transform hover:scale-110 focus:outline-none" data-value="biasa">
+      😐
+    </button>
+    <button type="button" class="emoji flex flex-col items-center text-4xl rounded-full transition transform hover:scale-110 focus:outline-none" data-value="kurang">
+      😕
+    </button>
+    <button type="button" class="emoji flex flex-col items-center text-4xl rounded-full transition transform hover:scale-110 focus:outline-none" data-value="sangat_kurang">
+      😡
+    </button>
+  </div>
+  <input type="hidden" name="emoji" id="emoji" required>
+</div>
+
+  <!-- Submit -->
+  <div class="w-full px-4">
+  <button id="submit-btn" type="submit" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">🚀 Kirim Sekarang!</button>
+  </div>
+</form>
         </div>
     </section>
     <!-- contact section end -->
@@ -949,6 +977,68 @@
     if (!countUp.error) {
       countUp.start();
     }
+  });
+  const form = document.getElementById("anonymous-form");
+  const submitBtn = document.getElementById("submit-btn");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault(); // Mencegah reload default
+
+    // Tampilkan loading
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Mengirim...";
+
+    try {
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        window.location.href = "/thankyou.html";
+      } else {
+        alert("Gagal mengirim pesan. Coba lagi nanti.");
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Kirim Pesan dan Rating";
+      }
+    } catch (error) {
+      alert("Terjadi kesalahan. Coba lagi nanti.");
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Kirim Pesan dan Rating";
+    }
+  });
+
+  // Script bintang
+  document.querySelectorAll(".star").forEach(star => {
+    star.addEventListener("click", function () {
+      document.getElementById("rating").value = this.dataset.value;
+      document.querySelectorAll(".star").forEach(s => s.classList.remove("text-yellow-400"));
+      for (let i = 0; i < this.dataset.value; i++) {
+        document.querySelectorAll(".star")[i].classList.add("text-yellow-400");
+      }
+    });
+  });
+
+  // Script emoji
+   const emojis = document.querySelectorAll('#emoji-rating .emoji');
+  const emojiInput = document.getElementById('emoji');
+
+  emojis.forEach(emoji => {
+    emoji.addEventListener('click', () => {
+      emojiInput.value = emoji.dataset.value;
+      // Reset style
+      emojis.forEach(e => {
+        e.classList.remove('ring-4', 'ring-primary', 'bg-primary', 'text-white', 'scale-110');
+        e.classList.add('bg-transparent', 'text-black');
+      });
+      // Highlight selected emoji
+      emoji.classList.remove('bg-transparent', 'text-black');
+      emoji.classList.add('ring-4', 'ring-primary', 'bg-primary', 'text-white', 'scale-110');
+    });
   });
 
 </script>
